@@ -7,8 +7,10 @@ public class Truck extends FosCar {
     this.maxLoad = maxLoad;
   }
 
-  public double getMaxLoad() {
-    //System.out.println("Max weight: " + this.maxLoad);
-    return this.maxLoad;
+  public void getMaxLoad() {
+    System.out.println("Type: Truck");
+    super.getEmission();
+    System.out.println("Max weight: " + this.maxLoad);
+    System.out.println("");
   }
 }

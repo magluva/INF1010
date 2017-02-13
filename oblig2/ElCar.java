@@ -8,7 +8,10 @@ public class ElCar extends Car {
     this.capacity = capacity;
   }
 
-  public double getCapacity() {
-    return this.capacity;
+  public void getCapacity() {
+    System.out.println("Type: Electric car");
+    super.getReg();
+    System.out.println("Battery capacity: " + this.capacity);
+    System.out.println("");
   }
 }

@@ -6,8 +6,8 @@ public class Car {
     this.regNum = regNum;
   }
 
-  public String getReg() {
-    return this.regNum;
+  public void getReg() {
+    System.out.println("Registration number: " + this.regNum);
   }
 
 }

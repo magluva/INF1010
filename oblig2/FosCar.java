@@ -8,7 +8,8 @@ public class FosCar extends Car {
     this.emission = emission;
   }
 
-  public double getEmission() {
-    return this.emission;
+  public void getEmission() {
+    super.getReg();
+    System.out.println("Emission: " + this.emission);
   }
 }

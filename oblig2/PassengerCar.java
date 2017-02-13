@@ -7,7 +7,10 @@ public class PassengerCar extends FosCar {
     this.seatNum = seatNum;
   }
 
-  public int getSeats() {
-    return this.seatNum;
+  public void getSeats() {
+    System.out.println("Type: Passenger car");
+    super.getEmission();
+    System.out.println("Number of seats: " + this.seatNum);
+    System.out.println("");
   }
 }
