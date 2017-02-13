@@ -1,0 +1,36 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Gist
+
+    @magluva
+
+1,947
+46,304
+
+    19,182
+
+# Class files
+*.class
+
+# Log file
+*.log
+*.txt
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
