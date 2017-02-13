@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.io.File;
-import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -16,12 +14,12 @@ public class Oblig2 {
         for (Car car : carList) {
           if (car instanceof PassengerCar) {
             PassengerCar pCar = (PassengerCar)car;
-            System.out.println(pCar.getSeats());
-            System.out.println("Passed passenger car");
+            pCar.getSeats();
+            //System.out.println("Passed passenger car");
           } else if (car instanceof Truck){
             Truck tCar = (Truck)car;
             tCar.getMaxLoad();
-            System.out.println("Passed truck");
+            //System.out.println("Passed truck");
           }
         }
       }
@@ -30,7 +28,7 @@ public class Oblig2 {
           if (car instanceof ElCar) {
             ElCar eCar = (ElCar)car;
             eCar.getCapacity();
-            System.out.println("Passed electric car");
+            //System.out.println("Passed electric car");
           }
         }
       }
@@ -40,30 +38,30 @@ public class Oblig2 {
         if (car instanceof PassengerCar) {
           PassengerCar pCar = (PassengerCar)car;
           pCar.getSeats();
-          System.out.println("Passed passenger car");
+          //System.out.println("Passed passenger car");
         } else if (car instanceof Truck){
           Truck tCar = (Truck)car;
           tCar.getMaxLoad();
-          System.out.println("Passed truck");
+          //System.out.println("Passed truck");
         } else {
           ElCar eCar = (ElCar)car;
           eCar.getCapacity();
-          System.out.println("Passed electric car");
+          //System.out.println("Passed electric car");
         }
       }
     }
   }
 
   public static ArrayList<Car> readFile(String file) throws IOException {
+
     BufferedReader reader = new BufferedReader(new FileReader(file));
-    StringBuilder sb = new StringBuilder();
     String line = null;
     double emission;
 
     ArrayList<Car> carList = new ArrayList<Car>();
 
     try {
-      int i = 0;
+      
       while ((line = reader.readLine()) != null) {
         String  [] content = line.split(" ");
         String make = content[0];
