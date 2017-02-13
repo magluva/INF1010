@@ -97,41 +97,4 @@ public class Oblig2 {
       reader.close();
     }
   }
-/*
-  public static void printFos(ArrayList<Car> carList) {
-
-    for (Car car : carList) {
-        if (car instanceof PassengerCar) {
-          PassengerCar pCar = (PassengerCar)car;
-          pCar.getSeats();
-          System.out.println("Passed passenger car");
-        } else {
-          Truck tCar = (Truck)car;
-          tCar.getMaxLoad();
-          System.out.println("Passed truck");
-        }
-      }
-    }
-    else if (args[1].equals("EL")) {
-      for (Car car : carList) {
-        if (car instanceof ElCar) {
-          ElCar eCar = (ElCar)car;
-          eCar.getCapacity();
-          System.out.println("Passed electric car");
-        }
-      }
-    } else {
-      for (Car car : carList) {
-        PassengerCar PassengerCar = (PassengerCar)car;
-        pCar.getSeats();
-        Truck tCar = (Truck)car;
-        tCar.getMaxLoad();
-        Elcar eCar = (ElCar)car;
-        eCar.getCapacity();
-        System.out.println("Total passed");
-      }
-
-    }
-  }
-  */
 }
