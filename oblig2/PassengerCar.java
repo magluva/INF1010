@@ -1,13 +1,13 @@
 public class PassengerCar extends FosCar {
 
-  String seatNum;
+  int seatNum;
 
-  public PassengerCar(String regNum, String emission, String seatNum) {
+  public PassengerCar(String regNum, double emission, int seatNum) {
     super(regNum, emission);
     this.seatNum = seatNum;
   }
 
-  public String getSeats() {
+  public int getSeats() {
     return this.seatNum;
   }
 }

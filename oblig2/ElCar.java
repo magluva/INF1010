@@ -8,7 +8,7 @@ public class ElCar extends Car {
     this.capacity = capacity;
   }
 
-  public String getCapacity() {
+  public double getCapacity() {
     return this.capacity;
   }
 }

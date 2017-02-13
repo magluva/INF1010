@@ -1,14 +1,14 @@
 public class FosCar extends Car {
 
   private String regNum;
-  private String emission;
+  private double emission;
 
-  public FosCar(String regNum, String emission) {
+  public FosCar(String regNum, double emission) {
     super(regNum);
     this.emission = emission;
   }
 
-  public String getEmission() {
+  public double getEmission() {
     return this.emission;
   }
 }
